@@ -10,4 +10,5 @@ install:
 script:
 - npm run clean
 - npm run build
+- ls
 - npm run deploy
