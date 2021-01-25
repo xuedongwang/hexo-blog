@@ -7,6 +7,7 @@
     "clean": "hexo clean",
     "server": "hexo server",
     "new": "node ./shell/new.js",
+    "delete": "node ./shell/delete.js",
     "deploy": "node ./shell/deploy.js --bucket=$bucket --region=$region --accessKeyId=$accessKeyId --accessKeySecret=$accessKeySecret",
     "server:debug": "hexo server --debug",
     "commit": "git pull && git add . && git commit -m 'commit' && git push"
@@ -31,6 +32,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "inquirer": "^7.3.3",
     "minimist": "^1.2.5"
   }
 }
