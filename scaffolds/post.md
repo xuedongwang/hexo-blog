@@ -1,8 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: JavsScript
+tags:
+  - JavsScript
 comments: true
 category: 前端
-description: 
+origin: true
+origin_url:
 ---
+<!-- more -->
