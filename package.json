@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "server": "hexo server",
     "new": "hexo new",
-    "deploy": "node ./shell/upload.js",
+    "deploy": "node ./shell/upload.js --bucket=$bucket --region=$region --accessKeyId=$accessKeyId --accessKeySecret=$accessKeySecret",
     "server:debug": "hexo server --debug",
     "commit": "git pull && git add . && git commit -m 'commit' && git push"
   },
