@@ -8,10 +8,10 @@
       clientID: '{{ theme.gitalk.clientID }}',
       clientSecret: '{{ theme.gitalk.clientSecret }}',
       repo: '{{ theme.gitalk.repo }}',
-      labels: ['git'],
+      labels: ['comment'],
       owner: '{{ theme.gitalk.owner }}',
       admin: ['{{ theme.gitalk.admin }}'],
-      id: '423423432',
+      id: md5(location.href),
       distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
     })
     gitalk.render('gitalk-container')
