@@ -34,4 +34,5 @@ jobs:
     - run: npm i
     - run: npm run clean
     - run: npm run build
+    - run: echo $bucket
     - run: node ./shell/deploy.js --bucket=$bucket --region=$region --accessKeyId=$accessKeyId --accessKeySecret=$accessKeySecret
