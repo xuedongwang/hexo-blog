@@ -22,16 +22,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        bucket: ${{ secrets.BUCKET }}
-        region: ${{ secrets.REGION }}
-        accessKeyId: ${{ secrets.ACCESSKEYID }}
-        accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
-    - shell: bash
-      env: # Or as an environment variable
-        bucket: ${{ secrets.BUCKET }}
-        region: ${{ secrets.REGION }}
-        accessKeyId: ${{ secrets.ACCESSKEYID }}
-        accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
+      - shell: bash
+        env: # Or as an environment variable
+          bucket: ${{ secrets.BUCKET }}
+          region: ${{ secrets.REGION }}
+          accessKeyId: ${{ secrets.ACCESSKEYID }}
+          accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
     # - run: node ./shell/deploy.js --bucket=wangxuedong-com --region=oss-cn-beijing --accessKeyId=LTAI4GKsuYw1rZVe7MNRnJgE --accessKeySecret=n6HYHvlIisKsLKAhNKuNsfMY6LeAW9
     - run: npm i
     - run: npm run clean
