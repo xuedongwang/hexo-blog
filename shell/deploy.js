@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const OSS = require('ali-oss');
 const argv = require('minimist')(process.argv.slice(2));
-console.log(process.env)
-console.log(argv)
+console.log(1212, process.env.bucket)
 const FILE_DIR = path.join(__dirname, '../public');
 
 let client = new OSS({
