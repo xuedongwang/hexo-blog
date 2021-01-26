@@ -3,7 +3,7 @@ const path = require('path');
 const OSS = require('ali-oss');
 // const argv = require('minimist')(process.argv.slice(2));
 const argv = process.env;
-console.log(3434, process.env.bucket)
+console.log(3434, process.env.ACCESSKEY_ID)
 const FILE_DIR = path.join(__dirname, '../public');
 let client = new OSS({
   bucket: argv['BUCKET'],
