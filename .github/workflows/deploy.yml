@@ -27,14 +27,10 @@ jobs:
         accessKeyId: ${{ secrets.ACCESSKEYID }}
         accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
       env: # Or as an environment variable
-        # bucket: ${{ secrets.deploy.BUCKET }}
-        # region: ${{ secrets.deploy.REGION }}
-        # accessKeyId: ${{ secrets.deploy.ACCESSKEYID }}
-        # accessKeySecret: ${{ secrets.deploy.ACCESSKEYSECRET }}
-        bucket: wangxuedong-com
-        region: oss-cn-beijing
-        accessKeyId: LTAI4GKsuYw1rZVe7MNRnJgE
-        accessKeySecret: n6HYHvlIisKsLKAhNKuNsfMY6LeAW9
+        bucket: ${{ secrets.BUCKET }}
+        region: ${{ secrets.REGION }}
+        accessKeyId: ${{ secrets.ACCESSKEYID }}
+        accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
     # - run: node ./shell/deploy.js --bucket=wangxuedong-com --region=oss-cn-beijing --accessKeyId=LTAI4GKsuYw1rZVe7MNRnJgE --accessKeySecret=n6HYHvlIisKsLKAhNKuNsfMY6LeAW9
     - run: npm i
     - run: npm run clean
