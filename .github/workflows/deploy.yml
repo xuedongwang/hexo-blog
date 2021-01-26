@@ -23,10 +23,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
       env: # Or as an environment variable
-      bucket: ${{ secrets.bucket }}
-      region: ${{ secrets.region }}
-      accessKeyId: ${{ secrets.accessKeyId }}
-      accessKeySecret: ${{ secrets.accessKeySecret }}
+        bucket: ${{ secrets.bucket }}
+        region: ${{ secrets.region }}
+        accessKeyId: ${{ secrets.accessKeyId }}
+        accessKeySecret: ${{ secrets.accessKeySecret }}
     - run: npm i
     - run: npm run clean
     - run: npm run build
