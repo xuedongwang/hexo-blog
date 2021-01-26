@@ -1,4 +1,5 @@
 {% if page.comments && theme.gitalk.enable %}
+  <script type="text/javascript" src="{{ url_for(theme.js) }}/src/md5.js?v={{ theme.version }}"></script>
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <div id="gitalk-container"></div>
@@ -7,9 +8,10 @@
       clientID: '{{ theme.gitalk.clientID }}',
       clientSecret: '{{ theme.gitalk.clientSecret }}',
       repo: '{{ theme.gitalk.repo }}',
+      labels: ['git'],
       owner: '{{ theme.gitalk.owner }}',
       admin: ['{{ theme.gitalk.admin }}'],
-      id: (location.pathname).split("/").pop().substring(0, 49),
+      id: '423423432',
       distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
     })
     gitalk.render('gitalk-container')

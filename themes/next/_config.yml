@@ -404,7 +404,7 @@ gitalk:
   clientID: f6a8488ffce0547e5470 # Github Application 的 clientID
   clientSecret: 1ead9582a9511e24e7023ce372ab02799b9adb1a # Github Application 的 clientSecret
   admin: xuedongwang # 用户名
-  distractionFreeMode: false # 评论时遮照效果的开关
+  distractionFreeMode: true # 评论时遮照效果的开关
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
