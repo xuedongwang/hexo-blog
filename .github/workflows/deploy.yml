@@ -35,4 +35,4 @@ jobs:
     - run: npm run clean
     - run: npm run build
     # - run: node ./shell/deploy.js --bucket=wangxuedong-com --region=oss-cn-beijing --accessKeyId=LTAI4GKsuYw1rZVe7MNRnJgE --accessKeySecret=n6HYHvlIisKsLKAhNKuNsfMY6LeAW9
-    - run: node ./shell/deploy.js --bucket=${{ secrets.deploy.BUCKET }} --region=${{ secrets.deploy.REGION }} --accessKeyId=${{ secrets.deploy.ACCESSKEYID }} --accessKeySecret=${{ secrets.deploy.ACCESSKEYSECRET }}
+    - run: node ./shell/deploy.js --bucket=${{ secrets.BUCKET }} --region=${{ secrets.REGION }} --accessKeyId=${{ secrets.ACCESSKEYID }} --accessKeySecret=${{ secrets.ACCESSKEYSECRET }}
