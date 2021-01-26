@@ -28,4 +28,4 @@ jobs:
     - run: npm i
     - run: npm run clean
     - run: npm run build
-    - run: node ./shell/deploy.js
+    - run: node ./shell/deploy.js --a=${{ secrets.ACCESSKEY_ID }}
