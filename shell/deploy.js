@@ -7,8 +7,8 @@ const FILE_DIR = path.join(__dirname, '../public');
 let client = new OSS({
   bucket: argv['bucket'],
   region: argv['region'],
-  accessKeyId: argv['accesskeyid'],
-  accessKeySecret: argv['accesskeysecret']
+  accessKeyId: argv['accessKeyId'],
+  accessKeySecret: argv['accessKeySecret']
 });
 
 let errorCount = 0;
