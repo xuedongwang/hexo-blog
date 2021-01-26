@@ -26,6 +26,7 @@ jobs:
         region: ${{ secrets.REGION }}
         accessKeyId: ${{ secrets.ACCESSKEYID }}
         accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
+    - shell: bash
       env: # Or as an environment variable
         bucket: ${{ secrets.BUCKET }}
         region: ${{ secrets.REGION }}
@@ -35,4 +36,4 @@ jobs:
     - run: npm i
     - run: npm run clean
     - run: npm run build
-    - run: node ./shell/deploy.js --bucket=${{ secrets.BUCKET }} --region=${{ secrets.REGION }} --accessKeyId=${{ secrets.ACCESSKEYID }} --accessKeySecret=${{ secrets.ACCESSKEYSECRET }}
+    - run: node ./shell/deploy.js --bucket="$bucket" --region="$region" --accessKeyId="$accesskeyid" --accessKeySecret="$accesskeysecret"
