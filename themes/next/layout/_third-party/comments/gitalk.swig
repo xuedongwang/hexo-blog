@@ -11,7 +11,7 @@
       labels: ['comment'],
       owner: '{{ theme.gitalk.owner }}',
       admin: ['{{ theme.gitalk.admin }}'],
-      id: md5(location.href),
+      id: md5.md5(location.href),
       distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
     })
     gitalk.render('gitalk-container')
