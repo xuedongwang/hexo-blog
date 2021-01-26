@@ -398,7 +398,7 @@ valine:
 #livere_uid: your uid
 
 gitalk:
-  enable: true # 是否启用
+  enable: false # 是否启用
   owner: xuedongwang # 用户名
   repo: gitment-comments # 存放评论的仓库名
   clientID: f6a8488ffce0547e5470 # Github Application 的 clientID
@@ -410,7 +410,7 @@ gitalk:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button

@@ -68,6 +68,8 @@
   {% endif %}
   
   {% elseif theme.gitalk.enable %}
+  <div class="comments" id="comments">
     <div id="gitalk-container"></div>
-    
+  </div>
+
 {% endif %}
