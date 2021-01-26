@@ -31,8 +31,8 @@ jobs:
         region: oss-cn-beijing
         accessKeyId: LTAI4GKsuYw1rZVe7MNRnJgE
         accessKeySecret: n6HYHvlIisKsLKAhNKuNsfMY6LeAW9
-      - run: npm i
-      - run: npm run clean
-      - run: npm run build
-      - run: echo "$bucket"
-      - run: node ./shell/deploy.js --bucket=$bucket --region=$region --accessKeyId=$accessKeyId --accessKeySecret=$accessKeySecret
+    - run: npm i
+    - run: npm run clean
+    - run: npm run build
+    - run: node ./shell/deploy.js --bucket=wangxuedong-com --region=oss-cn-beijing --accessKeyId=LTAI4GKsuYw1rZVe7MNRnJgE --accessKeySecret=n6HYHvlIisKsLKAhNKuNsfMY6LeAW9
+    # - run: node ./shell/deploy.js --bucket=$bucket --region=$region --accessKeyId=$accessKeyId --accessKeySecret=$accessKeySecret
