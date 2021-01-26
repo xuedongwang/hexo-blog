@@ -22,13 +22,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        bucket: ${{ secrets.BUCKET }}
-        region: ${{ secrets.REGION }}
-        accessKeyId: ${{ secrets.ACCESSKEYID }}
-        accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
-        ACCESSKEY_ID: ${{ secrets.ACCESSKEY_ID }}
       env: # Or as an environment variable
-        bucket: ${{ secrets.BUCKET }}
+        bucket: ${{ secrets }}
         region: ${{ secrets.REGION }}
         accessKeyId: ${{ secrets.ACCESSKEYID }}
         accessKeySecret: ${{ secrets.ACCESSKEYSECRET }}
