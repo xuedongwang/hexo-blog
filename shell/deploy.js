@@ -1,17 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const OSS = require('ali-oss');
-const argv1 = require('minimist')(process.argv.slice(2));
-console.log(argv1)
-const argv = process.env;
-console.log(3434, process.env.ACCESSKEY_ID)
-console.log(34341, argv)
+const argv = require('minimist')(process.argv.slice(2));
 const FILE_DIR = path.join(__dirname, '../public');
 let client = new OSS({
-  bucket: argv['BUCKET'],
-  region: argv['REGION'],
-  accessKeyId: argv['ACCESSKEYID'],
-  accessKeySecret: argv['ACCESSKEYSECRET']
+  bucket: argv['bucket'],
+  region: argv['region'],
+  accessKeyId: argv['accesskeyid'],
+  accessKeySecret: argv['accesskeysecret']
 });
 
 let errorCount = 0;

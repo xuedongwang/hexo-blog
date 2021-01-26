@@ -23,9 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
       env: # Or as an environment variable
-        ACCESSKEY_ID: ${{ secrets.ACCESSKEY_ID }}
-    # - run: node ./shell/deploy.js --bucket=wangxuedong-com --region=oss-cn-beijing --accessKeyId=LTAI4GKsuYw1rZVe7MNRnJgE --accessKeySecret=n6HYHvlIisKsLKAhNKuNsfMY6LeAW9
     - run: npm i
     - run: npm run clean
     - run: npm run build
-    - run: node ./shell/deploy.js --a=${{ secrets.ACCESSKEY_ID }}
+    - run: node ./shell/deploy.js --bucket=${{ secrets.BUCKET }}  --region=${{ secrets.REGION }}  --accessKeyId=${{ secrets.ACCESSKEYID }}  --accessKeySecret=${{ secrets.ACCESSKEYSECRET }}
