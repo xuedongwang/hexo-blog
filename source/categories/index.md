@@ -1,6 +1,6 @@
 ---
-title: 文章标签
-type: category
-layout: category
+title: 文章分类
+type: categories
+layout: categories
 comments: false
 ---

@@ -4,7 +4,7 @@ date: {{ date }}
 tags:
   - JavsScript
 comments: true
-category: 前端
+categories: 前端
 origin: true
 origin_url:
 ---
