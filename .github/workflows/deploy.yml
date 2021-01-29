@@ -26,6 +26,6 @@ jobs:
     - run: npm i
     - run: npm run clean
     - run: npm run build
-    - run: node ./shell/deploy.js --bucket ${{ secrets.BUCKET }}  --region ${{ secrets.REGION }}  --accessKeyId ${{ secrets.ACCESSKEYID }}  --accessKeySecret ${{ secrets.ACCESSKEYSECRET }}
-    - run: node ./shell/wechat.js --sckey ${{ secrets.FANGTANG_SCKEY }}
-    - run: node ./shell/email.js --pass ${{ secrets.EMAIL_PASS }}
+    - run: node ./shell/deploy.js --bucket=${{ secrets.BUCKET }}  --region=${{ secrets.REGION }}  --accessKeyId=${{ secrets.ACCESSKEYID }}  --accessKeySecret=${{ secrets.ACCESSKEYSECRET }}
+    - run: node ./shell/wechat.js --sckey=${{ secrets.FANGTANG_SCKEY }}
+    - run: node ./shell/email.js --pass=${{ secrets.EMAIL_PASS }}
