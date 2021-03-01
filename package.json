@@ -5,7 +5,8 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "server": "hexo server",
+    "publish": "hexo publish",
+    "server": "hexo server --draft",
     "new": "node ./shell/new.js",
     "delete": "node ./shell/delete.js",
     "server:debug": "hexo server --debug",
